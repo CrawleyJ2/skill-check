@@ -1,13 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
-    <link rel = "stylesheet" href="./assets/css/style.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "./assets/css/style.css">
 </head>
 <body>
+    <nav class = "">
+        <div class = "">
+            <div class = "row w-100">
+                <div class = "">
+                    <button type = "button" id = "highScoreButton" class = "btn">View High Scores</button>
+                </div>
+                <div class = ""></div>
+                <div class = "">
+                    <form>
+                        <div class = "">
+                            <label for = "time-remaining" class = "">Time Remaining</label>
+                            <div class = "">
+                                <input type = "number" id = "time-remaining" placeholder = "0">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class = "">
+        <div class = "row">
+            <div class = "col-12 text-center">
+                <h1>Code Quiz</h1>
+                <p>Test your coding knowledge with a timed quiz! Each wrong answer will deduct 10 seconds from the timer. The faster you finish, the higher your score!</p>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-12 text-center">
+                <button type = "button" id = "startButton" class = "btn">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div class = "" id = "quizBox">
+
+    </div>
+    <div class = "">
+        <div class = "row">
+            <div class = "col-12 text-center">
+                <form>
+                    <div class = "form-group row">
+                        <label for = "finalScore" class = "">Final Score</label>
+                        <div class = "">
+                            <input type = "number" id = "finalScore" placeholder = "0">
+                        </div>
+                    </div>
+                </form>
+                <form>
+                    <div class = "form-group">
+                        <label for = "initials">Initials</label>
+                        <input type = "text" class = "form-control" id = "nameEntry" placeholder = "Enter Initials">
+                    </div>
+                    <button type = "button" class = "btn" id = "enterInitials">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class = "" id = "highScoreContainer">
+        <div class = "row">
+            <div class = ""></div>
+            <div class = "" id = "highScoreTable">
+                <div class = "row">
+                    <div class = "col-12 text-center">
+                        <h2>High Scores</h2>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-2"></div>
+        </div>
+    </div>
     <script src = "./assets/js/script.js"></script>
 </body>
 </html>
