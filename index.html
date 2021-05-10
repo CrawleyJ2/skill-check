@@ -9,19 +9,19 @@
     <link rel = "stylesheet" href = "./assets/css/style.css">
 </head>
 <body>
-    <nav class = "">
-        <div class = "">
+    <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+        <div class = "container navbar-container mx-0">
             <div class = "row w-100">
-                <div class = "">
-                    <button type = "button" id = "highScoreButton" class = "btn">View High Scores</button>
+                <div class = "col-4 col-md-2">
+                    <button type = "button" id = "highScoreButton" class = "btn btn-info">View High Scores</button>
                 </div>
-                <div class = ""></div>
-                <div class = "">
+                <div class = "col-3 col-md-7"></div>
+                <div class = "col-5 col-md-3">
                     <form>
-                        <div class = "">
-                            <label for = "time-remaining" class = "">Time Remaining</label>
-                            <div class = "">
-                                <input type = "number" id = "time-remaining" placeholder = "0">
+                        <div class = "form-group row">
+                            <label for = "time-remaining" class = "col-sm-7 col-form-label">Time Remaining</label>
+                            <div class = "col-sm-5">
+                                <input type = "number" readonly class = "form-control" id = "time-remaining" placeholder = "0">
                             </div>
                         </div>
                     </form>
@@ -30,31 +30,35 @@
         </div>
     </nav>
 
-    <div class = "">
-        <div class = "row">
+    <div class = "container">
+        <div class = "row mb-3">
             <div class = "col-12 text-center">
                 <h1>Code Quiz</h1>
+            </div>
+        </div>
+        <div class = "row mb-3">
+            <div class = "col-12 text-center">
                 <p>Test your coding knowledge with a timed quiz! Each wrong answer will deduct 10 seconds from the timer. The faster you finish, the higher your score!</p>
             </div>
         </div>
         <div class = "row">
             <div class = "col-12 text-center">
-                <button type = "button" id = "startButton" class = "btn">Start Quiz</button>
+                <button type = "button" id = "startButton" class = "btn btn-secondary btn-lg">Start Quiz</button>
             </div>
         </div>
     </div>
 
-    <div class = "" id = "quizBox">
+    <div class = "container d-none" id = "quizBox">
 
     </div>
-    <div class = "">
+    <div class = "container d-none">
         <div class = "row">
             <div class = "col-12 text-center">
                 <form>
                     <div class = "form-group row">
-                        <label for = "finalScore" class = "">Final Score</label>
-                        <div class = "">
-                            <input type = "number" id = "finalScore" placeholder = "0">
+                        <label for = "finalScore" class = "col-sm-7 col-form-label">Final Score</label>
+                        <div class = "col-sm-5">
+                            <input type = "number" readonly class = "form-control" id = "finalScore" placeholder = "0">
                         </div>
                     </div>
                 </form>
@@ -63,15 +67,15 @@
                         <label for = "initials">Initials</label>
                         <input type = "text" class = "form-control" id = "nameEntry" placeholder = "Enter Initials">
                     </div>
-                    <button type = "button" class = "btn" id = "enterInitials">Submit</button>
+                    <button type = "button" class = "btn btn-primary" id = "enterInitials">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-    <div class = "" id = "highScoreContainer">
+    <div class = "container d-none" id = "highScoreContainer">
         <div class = "row">
-            <div class = ""></div>
-            <div class = "" id = "highScoreTable">
+            <div class = "col-2"></div>
+            <div class = "col-8" id = "highScoreTable">
                 <div class = "row">
                     <div class = "col-12 text-center">
                         <h2>High Scores</h2>
